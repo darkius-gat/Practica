@@ -1,0 +1,8 @@
+<nav class="carrera">
+		<ul>
+			{% for car in carreras %}
+				
+			{% endfor %}
+			<li><a href="{% url "carrera" car.pk %}">{{car.titulo}}</a></li>
+		</ul>
+	</nav>

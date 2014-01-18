@@ -1,0 +1,24 @@
+{% for alu in alumnos  %}
+	
+	<article class="post">
+		<div class="imagen">
+			<figure>
+				<img src="{{alu.imagen}}" alt="">
+			</figure>
+		</div>
+
+		<div class="informacion">
+			<h3 class="alumno">
+				{{alu.alumno}}
+			</h3>
+			<span class="carreras">
+				{{alu.carrera}}
+			</span>
+			<p class="fecha">
+				hace <strong>{{alu.timestamp|timesince}}</strong>
+			</p>
+		</div>
+	</article>
+
+
+{% endfor %}
